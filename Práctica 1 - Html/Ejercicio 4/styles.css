@@ -1,0 +1,29 @@
+.header {
+    border-bottom: 1px solid black;
+}
+
+.header .logo {
+    width: 70px;
+    height: 70px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 15rem;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+form .fields-container {
+    width: 25rem
+}
+
+.consulta-label {
+    display: inline-block;
+    width: 5rem;
+}
+
+
+

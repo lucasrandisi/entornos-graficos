@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header pd-b-2">
+        <a href="https://www.frro.utn.edu.ar/">
+            <img src="logo-utn.png" alt="logo utn" class="logo">
+        </a>
+    </div>
+
+    <h1 class="text-2xl">Año 2008</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">
+                    Exámenes
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Fecha: ............................</td>
+                <td class="text-align-center">Aprobados</td>
+            </tr>
+            <tr>
+                <td class="text-align-center">24/30</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <ol class="mt-2">
+        <li>
+            <a href="#enunciado">Enunciado del examen</a>
+        </li>
+        <li>
+            <a href="resolucion">Resolución</a>
+        </li>
+    </ol>
+
+    <form class="mt-5" action="mailto:x@x.com">
+        <div>
+            Puede realizar consultas completando el siguiente formulario
+        </div>
+
+        <div class="fields-container mt-2">
+            <div>
+                <label for="email" class="bold consulta-label">
+                    E-mail:
+                </label>
+                <input type="text" name="email">
+            </div>
+
+            <div>
+                <label for="consulta" class="bold consulta-label">
+                    Consulta:
+                </label>
+                <input type="text" name="consulta">
+            </div>
+
+            <div class="flex justify-center mt-2">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="enunciado">
+        <h2 class="text-lg">Enunciado del examen</h2>
+        <p>Ejercicio 1: .................</p>
+        <p>Ejercicio 2: .................</p>
+    </div>
+
+    <p class="mt-4">
+        Para más información dirigirse a <a href="mailto:contacto@xx.com">contacto@xx.com</a>
+    </p>
+</body>
+
+</html>
