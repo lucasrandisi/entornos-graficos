@@ -23,14 +23,16 @@
         <aside>
             <ul>
                 <li>
-                    <a href="articulos.html">Artículos</a>
+                    <a id="articulos-link" href="#articulos">Artículos</a>
                 </li>
                 <li>
-                    <a href="mas-info.html">Más info</a>
+                    <a id="mas-info-link" href="#mas-info">Más info</a>
                 </li>
             </ul>
         </aside>
-        <main>
+
+        <main class="flex-grow">
+            <iframe id="main-iframe" src="articulos.html" frameborder="0"></iframe>
         </main>
     </div>
 
@@ -45,5 +47,19 @@
         </ul>
     </footer>
 </body>
+
+<script>
+    const mainIframe = document.getElementById('main-iframe');
+
+    const articulos = document.getElementById('articulos-link');
+    articulos.addEventListener('click', () => {
+        mainIframe.setAttribute("src", "articulos.html");
+    });
+
+    const masInfo = document.getElementById('mas-info-link');
+    masInfo.addEventListener('click', () => {
+        mainIframe.setAttribute("src", "mas-info.html");
+    });
+</script>
 
 </html>
