@@ -7,15 +7,6 @@
     height: 70px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 15rem;
-}
-
-th, td {
-    border: 1px solid black;
-}
-
 form .fields-container {
     width: 25rem
 }

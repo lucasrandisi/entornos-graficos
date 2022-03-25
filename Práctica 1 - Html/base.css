@@ -1,3 +1,18 @@
+body {
+    margin: 1rem;
+    min-height: calc(100vh - 2rem);
+}
+
+table {
+    border-collapse: collapse;
+    width: 15rem;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+
 /* Text Style */
 .bold {
     font-weight: bold;
@@ -45,12 +60,33 @@
     display: flex;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .justify-center {
     justify-content: center;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
 
 /* Margin */
+.mt-0 {
+    margin-top: 0;
+}
+
 .mt-1 {
     margin-top: 0.5rem;
 }
