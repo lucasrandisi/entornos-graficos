@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Complementaria</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1</h2>
+    <p><b>Ventajas de HTML5:</b> <br>
+    <ol>
+        <li>Mejorar la estructura de las páginas con etiquetas específicas:
+            <ul>
+                <li>
+                    Encabezados de la estructura de la página con la etiqueta < header>
+                </li>
+                <li>
+                    Barras de navegación con la etiqueta < nav>
+                </li>
+                <li>
+                    Con la etiqueta < section> podremos especificar las secciones generales de nuestra página.
+                </li>
+                <li>
+                    Con el crecimiento de los sitios de noticias y blogs, se ha extendido la necesidad de definir uno o
+                    varios artículos en una página y esto podremos lograrlo ahora con HTML5 utilizando la etiqueta <
+                        article>.
+                </li>
+                <li>
+                    El contenido relacionado, que puede ubicarse en uno de los laterales de la página, ahora puede ser
+                    mostrado utilizado con la etiqueta específica < aside>.
+                </li>
+                <li>
+                    Si necesitamos representar cajas de diálogo u otros componentes interactivos como alertas, se pueden
+                    representar con la etiqueta < dialog>.
+                </li>
+                <li>
+                    Para finalizar, la etiqueta que nos permite definir el pie de la página, se puede especificar con la
+                    etiqueta < footer>.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Audio y video: en HTML 4.01, para integrar audio y video en nuestros sitios web es necesario embeber un
+            reproductor multimedia, a través de un plugin, que puede mostrarnos el reproductor de Quicktime, Windows
+            Media Player o bien un reproductor personalizado creado en Flash, como lo hacen muchos servicios de video
+            online. HTML5 provee las etiquetas < audio> y < video> para permitirnos mostrar características de audio y
+                    video en un sitio web.
+        </li>
+        <li>
+            Aplicaciones offline.
+        </li>
+        <li>
+            Dibujar sobre un lienzo. HTML5 introduce la etiqueta < canvas> para dibujar y realizar
+                representaciones de formas 2D
+        </li>
+        <li>
+            Además de ofrecer innovación y nuevas características, HTML5 se encarga
+            también de hacer una “limpieza” de las etiquetas que han quedado obsoletas
+        </li>
+    </ol>
+    </p>
+    <p>
+        <b>¿Por qué utilizarlo?</b>
+        <br>
+        La nueva versión de HTML contiene elementos dedicados ampliamente a mejorar la experiencia del usuario en
+        nuestra página web, haciendo más fácil al diseñador poder agregar elementos de audio, video y en general del web
+        2.0 así como organizar sus contenidos semánticamente.
+        La nueva versión es más eficiente y ocupa menos recursos en la computadora del cliente, en particular mediante
+        el uso del nuevo reproductor que no requiere flash o adobe player para utilizarse, y siendo el HTML5 compatible
+        con las versiones anteriores de HTML, utilizar la nueva versión en una página ya diseñada implica un menor
+        trabajo que si fuera una colección completamente nueva.
+        Por el contrario, HTML5 radica fuertemente en las capacidades del explorador, por lo que en estos momentos no
+        todos los exploradores lo soportan (actualmente sólo Chrome, Safari, Firefox, y Opera soportan la mayoría de las
+        características).
+    </p>
+
+    <h2>Ejercicio 2</h2>
+    <p>Dentro de los formatos encontramos los siguientes:
+    <ul>
+        <li>WAV, o WAVE. Es un formato de audio digital sin compresión de datos. Desarrollado por Microsoft e IBM.</li>
+        <li>MP3, formato de compresión de audio digital. Desarrollado por el Moving Picture Experts Group (MPEG).</li>
+        <li>AAC, o Advanced Audio Coding. Es un codec digital con perdida que se corresponde al estándar internacional
+            “ISO/IEC 13818-7” como una extensión de MPEG-2. Es muy utilizado en dispositivos Apple.</li>
+        <li>Vorbis, codec digital con perdida, conseguida mediante la compresión de datos, y de formato abierto. El
+            contenedor utilizado es Ogg. Desarrollador por Xiph.org</li>
+        <li>Opus, codec digital con pérdida, de formato abierto. El contenedor utilizado es Ogg. Está estandarizado por
+            el Internet Engineering Task Force (IETF).</li>
+    </ul>
+    </p>
+    <p>
+        Elemento de audio: <br>
+        <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" controls></audio>
+    </p>
+
+    <h2>Ejercicio 3</h2>
+    <p>
+        En este momento los navegadores permiten mostrar formatos como el MP4, WebM y OGV.
+    </p>
+    <p>
+        Este es un elemento de Video: <br>
+        <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls></video>
+    </p>
+
+    <h2>Ejercicio 4</h2>
+    <p>
+        Formulario con un campo requerido:
+    </p>
+    <br>
+    <form action="#">
+        <input type="text" id="usuario" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+
+    <p>
+        Formulario con un campo de tipo email: <br>
+    <form action="#">
+        <input type="email" id="email" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </p>
+
+    <hr>
+
+    <p>
+        Formulario con un campo de tipo fecha: <br>
+    <form action="#">
+        <input type="date" id="fecha" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </p>
+
+    <hr>
+
+    <p>
+        Formulario con un campo de tipo color: <br>
+    <form action="#">
+        <input type="color" id="color" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </p>
+
+    <hr>
+
+    <p>
+        Formulario con un campo de tipo number con valores minimos y maximos permitidos: <br>
+    <form action="#">
+        <input type="number" id="number" min="1" max="99" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </p>
+</body>
+
+</html>
