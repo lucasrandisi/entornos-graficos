@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p .quitar {
+            color: red;
+        }
+
+        * .desarrollo {
+            font-size: 8px;
+        }
+
+        .importante {
+            font-size: 20px;
+        }
+    </style>
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <h1>Ejercicio 3</h1>
+    <p class="desarrollo">
+        En este primer párrafo trataremos lo siguiente:
+        <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+    <p class="quitar">
+        Este párrafo debe ser quitado de la obra…
+        <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+    <p>
+        En este otro párrafo trataremos otro tema:<br />
+        xxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+    <p class="importante">
+        Y este es el párrafo más importante de la obra…
+        <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+        </Sp>
+    <h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+    <p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+
+    <p>En este caso tenemos tres reglas:</p>
+    <ul>
+        <li>La primera se aplica a todos los elementos p que contengan la clase "quitar".
+        </li>
+        <li>En la segunda el selector universal no realiza efecto alguno y la especificidad viene dada por la clase
+            desarrollo</li>
+        <li>La tercera es similar a la anterior pero sin el selector universal, pero vimos que esto tiene el mismo
+            efecto.</li>
+    </ul>
+    <p>
+        En la aplicación vemos como se aplica cada regla, aplicandose en diferentes elementos. También se muestra el
+        caso de que haya dos
+        clases en un mismo elemento. Aquí se aplican ambos estilos: el color rojo de "quitar" y el tamaño de
+        "importante".
+    </p>
+</body>
+
+</html>

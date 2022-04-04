@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1</h2>
+    <h3>1. ¿Qué es CSS y para qué se usa?</h3>
+    <p>
+        CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en cascada.</p>
+    <p>
+        Las hojas de estilo es una tecnología que nos permite controlar la apariencia de una página web.
+        En un principio HTML era quien se encargaba de dicha tarea, pero hoy en día se limita a especificar
+        el contenido de la página definiendo su estructura. Con CSS podemos especificar estilos como el tamaño,
+        fuentes, color, espaciado entre textos y recuadros
+    </p>
+
+    <h3>2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?</h3>
+    <p>
+        Las hojas de estilo están compuestas por una o más de esas reglas aplicadas a un documento HTML o XML.
+        Cada una de las mismas tiene dos partes: un selector y la declaración. A su vez la declaración está
+        compuesta por una propiedad y el valor que se le asigne.</p>
+    <p>
+        El selector funciona como enlace entre el documento y el estilo, especificando los elementos que
+        se van a ver afectados por dicha declaración. Por su parte, la declaración es la parte de la regla
+        que establece el efecto.
+    </p>
+
+    <h3>3. ¿Cuáles son las tres formas de dar estilo a un documento?</h3>
+    <ul>
+        <li>
+            Utilizando una hoja de estilo externa que estará vinculada a un documento a través del tag
+            &lt;link&gt;, el cual debe ir situado en la sección &lt;head&gt;.
+        </li>
+        <li>
+            Utilizando el elemento &lt;style&gt;, en el interior del documento al que se le quiere dar estilo, y que
+            se situaría en la sección &lt;head&gt;
+        </li>
+        <li>
+            Utilizando estilos directamente sobre aquellos elementos que lo permiten a través del atributo &lt;style&gt;
+            Esta forma es la menos recomendada debido a su gran especificidad
+        </li>
+    </ul>
+
+    <h3>4. ¿Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno.</h3>
+    <ul>
+        <li>
+            <b>Selector Universal: </b> <br>
+            Sintaxis: * { atributo:valor; } <br>
+            Ejemplo:* { color: grey; } El estilo se aplicará a todos los elementos de la página
+        </li>
+        <br>
+        <li>
+            <b>Selector Etiqueta: </b> <br>
+            Sintaxis: etiqueta { atributo:valor } <br>
+            Ejemplo: p {color: green;} El estilo se aplicará a todos los elementos &lt;p&gt;
+        </li>
+        <br>
+        <li>
+            <b>Selector Clase: </b> <br>
+            Sintaxis: .clase { atributo:valor } <br>
+            Ejemplo: .blend{color: red;} El estilo se aplicará a cualquier elemento que tenga la clase .blend
+        </li>
+        <br>
+        <li>
+            <b>Selector Identificador: </b>
+            El selector identificador utiliza el atributo id para seleccionar un elemento. Solo puede haber
+            un elemento con un id dado en un documento. <br>
+            Sintaxis: #id { atributo:valor } <br>
+            Ejemplo: #cent {color: blue;} El estilo se aplicará al elemento que tenga el id #cent
+        </li>
+        <br>
+        <li>
+            <b>Selector Descendiente: </b> <br>
+            Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del
+            elemento padre. <br>
+            Sintaxis: selector1 selector2 selectorN {atributo: valor;} El estilo se aplica sobre el selector N <br>
+            Ejemplo: div p { color: black;} El estilo se aplica a todos los párrafos que se encuentren dentro de una
+            etiqueta div
+        </li>
+        <br>
+        <li>
+            <b>Combinacion de Selectores: </b> <br>
+            La combinación de selectores nos permite dar un estilo a todos los selectores indicados. <br>
+            Sintaxis: selector1, selector2, selector3{atributo: valor;} El estilo se aplica sobre los selectores
+            indicados <br>
+            Ejemplo: div, p { color: orange;} El estilo se aplica a todos los divs y párrafos
+        </li>
+        <br>
+        <li>
+            <b>Selector de Hijos: </b> <br>
+            Se usa para seleccionar un elemento que es hijo de otro elemento. <br>
+            Sintaxis: selector1 > selector2 {atributo: valor;} El estilo se aplica sobre el selector 2 <br>
+            Ejemplo: div > p { color: white;} El estilo se aplica a todos los párrafos que sean hijos de un div
+        </li>
+        <br>
+        <li>
+            <b>Selector Adyacente: </b> <br>
+            Se usa para seleccionar elementos que son hermanos, es decir, su elemento padre es el mismo y están
+            seguidos en el código HTML. <br>
+            Sintaxis: selector1 + selector2{ atributo: valor; } El estilo se aplica al selector 2 <br>
+            Ejemplo: div + p { color: black;} El estilo se aplica a todos los párrafos que sean hermanos de un div
+        </li>
+    </ul>
+
+    <h3>5. ¿Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?</h3>
+    <p>
+        Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del
+        elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento
+        especificado por el selector.
+    </p>
+    <p>
+        Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación
+        con
+        el contenido del árbol de documento, sino externos como el historial del navegador (:visited, por ejemplo),
+        el estado de su contenido (como :checked en algunos elementos de formulario), o la posición del ratón (como
+        :hover que permite saber si el ratón está encima de un elemento o no).
+    </p>
+
+    <h3>6. ¿Qué es la herencia?</h3>
+    <p>
+        La herencia en CSS es el mecanismo mediante el cual determinadas propiedades de un elemento padre se transmiten
+        a
+        sus hijos. Mediante la misma, por ejemplo, se pueden especificar las propiedades de las fuentes de los elementos
+        html o
+        body y todo el resto de elementos los heredarán sin necesidad especificar cada uno de ellos.
+    </p>
+
+    <h3>7. ¿En qué consiste el proceso denominado cascada?</h3>
+    <p>
+        La cascada es el mecanismo que controla el resultado final de como visualizaremos una etiqueta html cuando a
+        esta
+        se le apliquen distintas instrucciones CSS.
+        Un mismo elemento puede estar sujeto a varias hojas de estilos CSS y existen unas normas que rigen el orden de
+        prioridad de cada regla aplicada
+    </p>
+</body>
+
+</html>
