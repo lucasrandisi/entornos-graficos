@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recomendación</title>
+</head>
+
+<body>
+	<h1>Recomiende la página!</h1>
+	<p>Nos ayudaría mucho si compartiera nuestra página con sus amigos.</p>
+
+	<form action="server.php" method="post">
+		<fieldset>
+			<label for="nombre">Nombre:</label>
+			<input id="nombre" name="nombre" type="text">
+		</fieldset>
+		<fieldset>
+			<label for="email">Email de su amigo:</label>
+			<input id="email" name="email" type="email">
+		</fieldset>
+		<fieldset>
+			<label for="mensaje">Déjale un mensaje:</label><br>
+			<textarea name="mensaje" id="mensaje" cols="32" rows="6"></textarea>
+		</fieldset>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+
+</html>
