@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alta</title>
+</head>
+
+<body>
+	<h1>Alta</h1>
+	<form action="alta.php" method="post">
+		<fieldset>
+			<label for="ciudad">Ciudad:</label>
+			<input id="ciudad" name="ciudad" type="text" required>
+
+			<label for="pais">País:</label>
+			<input id="pais" name="pais" type="text" required>
+		</fieldset>
+		<fieldset>
+			<label for="habitantes">Cantidad de habitantes:</label>
+			<input id="habitantes" name="habitantes" type="text" required>
+
+			<label for="superficie">Superficie:</label>
+			<input id="superficie" name="superficie" type="text" required>
+
+			<label for="metro">Tiene metro?</label>
+			<input type="radio" name="metro" id="metro" value="1" required> Si
+			<input type="radio" name="metro" id="metro" value="0"> No
+		</fieldset>
+		<input type="submit" value="Dar de alta">
+	</form>
+	<p><a href="menu.html">Volver al menu</a></p>
+</body>
+
+</html>
